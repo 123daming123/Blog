@@ -1,0 +1,31 @@
+doctype html  
+html  
+    head  
+        title MyBlog By 343628276 
+        link(rel='stylesheet', href='./stylesheets/bootstrap.min.css')  
+        link(rel='stylesheet', href='./stylesheets/blog.css')  
+        script(type="text/javascript",src='javascripts/jquery.js')  
+        script(type="text/javascript",src='javascripts/bootstrap.min.js')  
+        script(type="text/javascript",src='javascripts/blog.js')  
+    body  
+        div.navbar.navbar-fixed-top  
+            div.navbar-inner  
+                div.container  
+                    a.btn.btn-navbar(data-toggle="collapse",data-target=".nav-collapse")  
+                        span.icon-bar  
+                        span.icon-bar  
+                        span.icon-bar  
+                    a.brand(href="/") MyBlog  
+                    div.nav-collapse  
+                        ul.nav  
+                            li  
+                                a(href="/") 首页  
+                            li  
+                                  a(href="/login") 登入  
+                            li  
+                                    a(href="/reg") 注册   
+        div#contrainer.container  
+            block content  
+            hr  
+        fotter  
+         p     作者：钟明     QQ:343628276
